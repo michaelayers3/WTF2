@@ -1,0 +1,144 @@
+html {
+    /* 100vh replacement for 100% height*/
+    height: 100vh;
+
+    /* Background image linked here*/
+    /*Background image from: https://www.pxfuel.com/en/free-photo-emdqi */
+    background-image: url(../images/theaterseats.jpg);
+
+    /* Background color as backup for image*/
+    background-color: #181818;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* Fixes background image in place so content scrolls over top */
+    background-attachment: fixed;
+
+    min-height: 100vh;
+}
+
+#search {    
+    border-radius: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main .container {
+    width: 50%;
+}
+
+body header {
+    text-align: center;
+}
+
+body header h1 {
+    font-size: 6.125em;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.flick {
+    color: #e50914;
+    font-family: 'Franchise', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*important for page layout! changing these properties will probably break the footer again*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main .history {
+    border: 1px solid hsl(205deg, 14%, 68%);
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    max-height: 75vh;
+    padding: 10px;
+}
+
+.history div {
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.movie-card {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.movie-card h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#clear-history {
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(124 28 32);
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/*Hide main verticle scrollbar*/
+::-webkit-scrollbar:vertical {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(205, 14%, 68%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(205, 14%, 40%);
+    border: 2px solid hsl(205, 14%, 68%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(205, 14%, 35%);
+}
+
+footer {
+    /*'margin top: auto;' is working together with the 'display: flex;','flex-direction: column;' and 'min-height' 
+    properties in body to keep the footer at the bottom of the page*/
+    margin-top: auto;
+    text-align: center;
+    color: #fff;
+
+    /*Found a cool way of keeping the footer visible on bg image*/
+    mix-blend-mode: difference;
+
+    font-size: 1.5rem;
+}
+
+footer a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    mix-blend-mode: normal;
+}
