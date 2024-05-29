@@ -4,10 +4,10 @@ html {
 
     /* Background image linked here*/
     /*Background image from: https://www.pxfuel.com/en/free-photo-emdqi */
-    background-image: url(../images/theaterseats.jpg);
+    /* background-image: url(../images/theaterseats.jpg); */
 
     /* Background color as backup for image*/
-    background-color: #181818;
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -133,12 +133,12 @@ footer {
     /*Found a cool way of keeping the footer visible on bg image*/
     mix-blend-mode: difference;
 
-    font-size: 1.5rem;
+    font-size: .5rem;
 }
 
 footer a {
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 5rem;
     font-weight: 600;
     mix-blend-mode: normal;
 }
